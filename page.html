@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js ie8" lang="en-US"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en-US"><!--<![endif]-->
+<head>
+    <title>Angliae, Scotiae, Et Hiberniae Sive Britannicae Insularum Descriptio - Barry Lawrence Ruderman Antique Maps Inc.</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <meta http-equiv="cleartype" content="on" />
+    <meta property="og:url" content="https://www.raremaps.com/gallery/detail/54058/angliae-scotiae-et-hiberniae-sive-britannicae-insularum-de-ortelius" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="google-site-verification" content="koPgs-dUDPdKgOEZnKvTsSMVW-D1TFz84NXXpcjvlXM" />
+                    <link rel="canonical" href="https://www.raremaps.com/gallery/detail/54058/angliae-scotiae-et-hiberniae-sive-britannicae-insularum-de-ortelius" />
+                <meta property="og:type" content="product" />
+                <meta property="og:title" content="Angliae, Scotiae, Et Hiberniae Sive Britannicae Insularum Descriptio" />
+                <meta property="og:description" content="Attractive full-color example of Ortelius' first map of the British Isles, from Ortelius' Theatrum Orbis Terrarum, the first modern atlas of the world." />
+                <meta property="og:image" content="https://storage.googleapis.com/raremaps/img/large/54058.jpg" />
+        <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="462x8R2PWvXrxcFm52Nr_32Yavt-vsmf3oCX_XPlEy-uwtzGdNkLl6P2ohzXNQLMOuwBogfmoM640seZHY12bQ==">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122324429-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-122324429-1')
+</script>
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '876350469231365');fbq('track', 'PageView');</script><noscript><img height="1" width="1" style="display:none"src="https://www.facebook.com/tr?id=876350469231365&ev=PageView&noscript=1"/></noscript>    <link href="/assets/bf989f32/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+<link href="/css/normalize.css" rel="stylesheet">
+<link href="/css/global.css" rel="stylesheet">
+<script>var appOptions = {"appName":" Barry Lawrence Ruderman, Antique Maps Inc.","language":"en-US","baseUrl":"https:\/\/www.raremaps.com\/","baseUrlFrontend":"https:\/\/www.raremaps.com\/"};
+var baseUrl = '';
+var hitId = '4991811';
+gtag('event','view_item',{"items":[{"id":"54058","name":"Ortelius / 1574 / Angliae, Scotiae, Et Hiberniae Sive Britannicae Insularum Descriptio (British Isles 2, 54058)","brand":"Ortelius","category":"Maps/Europe/British Isles/British Isles|Maps/Europe/British Isles/England|Maps/Europe/British Isles/Scotland|Maps/Europe/British Isles/Ireland|Maps/Europe/British Isles/Wales","variant":1574,"price":"875.00","quantity":1}]});
+
+fbq('track','ViewContent',{"content_name":"Ortelius / 1574 / Angliae, Scotiae, Et Hiberniae Sive Britannicae Insularum Descriptio (British Isles 2, 54058)","content_category":"Maps/Europe/British Isles/British Isles|Maps/Europe/British Isles/England|Maps/Europe/British Isles/Scotland|Maps/Europe/British Isles/Ireland|Maps/Europe/British Isles/Wales","content_ids":"54058","content_type":"product","value":"0.44","currency":"USD"});
+</script>    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+<div id="container" class="container">
+    <header id="header">
+        <div class="hamburger"><span></span></div>
+        <a class="logo-container" href="/">
+            <div class="logo">
+                <img alt="BLR Logo" src="/img/blr_logo.svg" />
+            </div>
+            <div class="heading">
+                <div class="primary">Barry Lawrence Ruderman</div>
+                <div class="secondary">Antique Maps Inc.</div>
+            </div>
+        </a>
+        <div class="search">
+            <form class="search-form" id="search-form" action="/inventory/search">
+                <div class="search-fields">
+                    <label class="sr-only" for="search-all-field">Search Terms</label>                    <input type="text" id="search-all-field" name="q" placeholder="Search Inventory">                    <a href="#" id="advanced-search-button"><span class="dropdown-dark-icon"></span> Advanced Search</a>
+                    <div id="advanced-search-box">
+                        <div class="search-field" id="search-section-field">
+                            <label class="sr-only" for="section-field">Section</label>                            <select id="section-field" name="section">
+<option value="">Section: For Sale</option>
+<option value="archive">Section: Sold</option>
+</select>                        </div>
+                        <div class="search-field" id="search-recent-field">
+                            <label class="sr-only" for="recent-field">Updated</label>                            <select id="recent-field" name="recent">
+<option value="">Updated: All Time</option>
+<option value="30">Updated: 30 Days</option>
+<option value="60">Updated: 60 Days</option>
+<option value="90">Updated: 90 Days</option>
+<option value="120">Updated: 120 Days</option>
+</select>                        </div>
+                        <input type="hidden" id="adv-search-category_id" name="category_id">                        <div class="search-field" id="search-category-field">
+                            <label class="sr-only" for="category-field">Category</label>                            <input type="text" id="category-field" name="category" placeholder="Limit Category To">                        </div>
+                        <div class="search-field" id="search-title-field">
+                            <label class="sr-only" for="title-field">Title</label>                            <input type="text" id="title-field" name="title" placeholder="Title">                        </div>
+                        <div class="search-field" id="search-mapmaker-field">
+                            <label class="sr-only" for="maker-field">Map Maker</label>                            <input type="text" id="maker-field" name="mapmaker" placeholder="Map Maker">                        </div>
+                        <div class="search-field" id="search-issue_year_min-field">
+                            <label class="sr-only" for="issue_year_min-field">Minimum Issue Year</label>                            <input type="text" id="issue_year_min-field" name="issue_year_min" placeholder="Earliest Date Published">                        </div>
+                        <div class="search-field" id="search-issue_year_max-field">
+                            <label class="sr-only" for="issue_year_max-field">Maximum Issue Year</label>                            <input type="text" id="issue_year_max-field" name="issue_year_max" placeholder="Latest Date Published">                        </div>
+                        <div class="search-field" id="search-price_min-field">
+                            <label class="sr-only" for="price_min-field">Minimum Price</label>                            <input type="text" id="price_min-field" name="price_min" placeholder="Low Price">                        </div>
+                        <div class="search-field" id="search-price_max-field">
+                            <label class="sr-only" for="price_max-field">Maximum Price</label>                            <input type="text" id="price_max-field" name="price_max" placeholder="High Price">                        </div>
+                        <div class="search-field" id="adv-search-button">
+                            <button type="submit" class="btn btn-success">Search</button>                        </div>
+                        <div class="search-field" id="adv-reset-button">
+                            <button type="button" class="btn btn-danger">Reset</button>                        </div>
+                    </div>
+                </div>
+                <div class="search-button">
+                    <button type="submit"><span class="icon-search"></span>Search</button>
+                </div>
+            </form>
+        </div>
+        <div class="mini-nav box-anchor">
+            <ul>
+                <li id="mini-account-link" class="button-mini-box" data-box="account-mini-box">
+                    <a class="link-mini-box" href="/account">
+                        <span class="icon-account"></span>
+                        <span class="label">
+                        Account<span class="dropdown-icon"></span>
+                        </span>
+                    </a>
+                </li>
+                <li id="mini-cart-link" class="button-mini-box" data-box="cart-mini-box">
+                    <a id="mini-cart-link" class="link-mini-box" href="/basket">
+                        <span class="icon-cart"></span>
+                        <div class="sr-only">Shopping Cart</div>
+                                            </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <nav id="main-nav">
+        <div id="site-name"><a href="/">RareMaps.com</a></div>
+        <div class="drawer-title">
+            <p>Main Menu</p>
+            <div class="button-close-drawer">
+                <span>+</span>
+            </div>
+        </div>
+        <ul>
+            <li class="drawer-only drawer-search-form">
+                    <form action="/inventory/search">
+                        <div class="drawer-search-field">
+                            <input type="hidden" name="phase" value="results" />
+                            <label class="sr-only" for="q-field">Search Terms</label>
+                            <input type="text" name="q" id="q-field" placeholder="Search Inventory" value=""/>
+                        </div>
+                        <div class="drawer-search-button">
+                            <button type="submit" class="btn btn-dark"><span class="icon-search"></span><div class="sr-only">Submit</div></button>
+                        </div>
+                    </form>
+            </li>
+            <li><a href="#" class="open-drawer mobile" data-drawer="category-nav">Antique Maps</a></li>
+            <li><a href="/gallery/recent">Recently Added</a></li>
+            <li><a href="/site/about">About Us</a></li>
+            <li><a href="/site/contact">Contact Us</a></li>
+            <li class="drawer-only"><a href="/account">Account</a></li>
+            <li class="drawer-only"><a href="/basket">Shopping Cart</a></li>
+            <li class="drawer-only"><a href="tel:+18585518500">858-551-8500</a></li>
+        </ul>
+        <div class="phone drawer-hide"><a href="tel:+18585518500">Order By Phone: 858-551-8500</a></div>
+    </nav>
+    <div id="inventory-controller" class="main">
+        <div id="panel-left">
+<nav id="category-nav">
+    <div class="drawer-title">
+        <p>Antique Map Categories</p>
+        <div class="button-close-drawer">
+            <span>+</span>
+        </div>
+    </div>
+    <div class="lookup-field">
+        <label for="category-ac" class="sr-only">Category</label>
+        <input type="text" id="category-ac" name="category-ac" placeholder="Category Lookup" />
+    </div>
+    <div class="category-menu slinky-menu"><ul><li><a href="/category/Maps/World">World</a><ul><li><a href="/category/Maps/World/World" data-id="12">World<span> (278)</span></a></li>
+<li><a href="/category/Maps/World/Eastern_Hemisphere" data-id="13">Eastern Hemisphere<span> (20)</span></a></li>
+<li><a href="/category/Maps/World/Western_Hemisphere" data-id="14">Western Hemisphere<span> (34)</span></a></li>
+<li><a href="/category/Maps/World/Northern_Hemisphere" data-id="15">Northern Hemisphere<span> (28)</span></a></li>
+<li><a href="/category/Maps/World/Southern_Hemisphere" data-id="16">Southern Hemisphere<span> (13)</span></a></li>
+<li><a href="/category/Maps/World/Atlantic_Ocean" data-id="18">Atlantic Ocean<span> (67)</span></a></li>
+<li><a href="/category/Maps/World/Pacific_Ocean" data-id="19">Pacific Ocean<span> (10)</span></a></li>
+<li><a href="/category/Maps/World/Indian_Ocean" data-id="20">Indian Ocean<span> (38)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/United_States">United States</a><ul><li><a href="/category/Maps/United_States/United_States" data-id="22">United States<span> (259)</span></a></li>
+<li><a href="/category/Maps/United_States/New_England">New England</a><ul><li><a href="/category/Maps/United_States/New_England/New_England" data-id="24">New England<span> (252)</span></a></li>
+<li><a href="/category/Maps/United_States/New_England/Connecticut" data-id="25">Connecticut<span> (25)</span></a></li>
+<li><a href="/category/Maps/United_States/New_England/Maine" data-id="26">Maine<span> (32)</span></a></li>
+<li><a href="/category/Maps/United_States/New_England/Massachusetts" data-id="27">Massachusetts<span> (85)</span></a></li>
+<li><a href="/category/Maps/United_States/New_England/Boston" data-id="258">Boston<span> (36)</span></a></li>
+<li><a href="/category/Maps/United_States/New_England/New_Hampshire" data-id="28">New Hampshire<span> (24)</span></a></li>
+<li><a href="/category/Maps/United_States/New_England/Rhode_Island" data-id="29">Rhode Island<span> (24)</span></a></li>
+<li><a href="/category/Maps/United_States/New_England/Vermont" data-id="30">Vermont<span> (27)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/United_States/New_York">New York</a><ul><li><a href="/category/Maps/United_States/New_York/New_York_City" data-id="32">New York City<span> (86)</span></a></li>
+<li><a href="/category/Maps/United_States/New_York/New_York_State" data-id="33">New York State<span> (100)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/United_States/Mid-Atlantic">Mid-Atlantic</a><ul><li><a href="/category/Maps/United_States/Mid-Atlantic/Mid-Atlantic" data-id="35">Mid-Atlantic<span> (252)</span></a></li>
+<li><a href="/category/Maps/United_States/Mid-Atlantic/Washington,_D.C." data-id="36">Washington, D.C.<span> (11)</span></a></li>
+<li><a href="/category/Maps/United_States/Mid-Atlantic/New_Jersey" data-id="37">New Jersey<span> (39)</span></a></li>
+<li><a href="/category/Maps/United_States/Mid-Atlantic/Pennsylvania" data-id="38">Pennsylvania<span> (44)</span></a></li>
+<li><a href="/category/Maps/United_States/Mid-Atlantic/Philadelphia" data-id="257">Philadelphia<span> (20)</span></a></li>
+<li><a href="/category/Maps/United_States/Mid-Atlantic/Maryland" data-id="39">Maryland<span> (49)</span></a></li>
+<li><a href="/category/Maps/United_States/Mid-Atlantic/Delaware" data-id="40">Delaware<span> (41)</span></a></li>
+<li><a href="/category/Maps/United_States/Mid-Atlantic/West_Virginia" data-id="41">West Virginia<span> (15)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/United_States/Florida" data-id="42">Florida<span> (126)</span></a></li>
+<li><a href="/category/Maps/United_States/South">South</a><ul><li><a href="/category/Maps/United_States/South/South" data-id="44">South<span> (214)</span></a></li>
+<li><a href="/category/Maps/United_States/South/Louisiana" data-id="45">Louisiana<span> (42)</span></a></li>
+<li><a href="/category/Maps/United_States/South/New_Orleans" data-id="260">New Orleans<span> (11)</span></a></li>
+<li><a href="/category/Maps/United_States/South/Alabama" data-id="46">Alabama<span> (42)</span></a></li>
+<li><a href="/category/Maps/United_States/South/Mississippi" data-id="47">Mississippi<span> (26)</span></a></li>
+<li><a href="/category/Maps/United_States/South/Arkansas" data-id="48">Arkansas<span> (26)</span></a></li>
+<li><a href="/category/Maps/United_States/South/Kentucky" data-id="49">Kentucky<span> (31)</span></a></li>
+<li><a href="/category/Maps/United_States/South/Tennessee" data-id="50">Tennessee<span> (29)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/United_States/Southeast">Southeast</a><ul><li><a href="/category/Maps/United_States/Southeast/Southeast" data-id="52">Southeast<span> (318)</span></a></li>
+<li><a href="/category/Maps/United_States/Southeast/Virginia" data-id="53">Virginia<span> (86)</span></a></li>
+<li><a href="/category/Maps/United_States/Southeast/Georgia" data-id="54">Georgia<span> (35)</span></a></li>
+<li><a href="/category/Maps/United_States/Southeast/North_Carolina" data-id="55">North Carolina<span> (54)</span></a></li>
+<li><a href="/category/Maps/United_States/Southeast/South_Carolina" data-id="56">South Carolina<span> (59)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/United_States/Texas" data-id="57">Texas<span> (184)</span></a></li>
+<li><a href="/category/Maps/United_States/Midwest">Midwest</a><ul><li><a href="/category/Maps/United_States/Midwest/Midwest" data-id="59">Midwest<span> (201)</span></a></li>
+<li><a href="/category/Maps/United_States/Midwest/Illinois" data-id="60">Illinois<span> (45)</span></a></li>
+<li><a href="/category/Maps/United_States/Midwest/Chicago" data-id="256">Chicago<span> (21)</span></a></li>
+<li><a href="/category/Maps/United_States/Midwest/Indiana" data-id="61">Indiana<span> (21)</span></a></li>
+<li><a href="/category/Maps/United_States/Midwest/Ohio" data-id="62">Ohio<span> (33)</span></a></li>
+<li><a href="/category/Maps/United_States/Midwest/Michigan" data-id="63">Michigan<span> (29)</span></a></li>
+<li><a href="/category/Maps/United_States/Midwest/Minnesota" data-id="64">Minnesota<span> (25)</span></a></li>
+<li><a href="/category/Maps/United_States/Midwest/Wisconsin" data-id="65">Wisconsin<span> (22)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/United_States/Plains">Plains</a><ul><li><a href="/category/Maps/United_States/Plains/Plains" data-id="67">Plains<span> (173)</span></a></li>
+<li><a href="/category/Maps/United_States/Plains/Iowa" data-id="68">Iowa<span> (24)</span></a></li>
+<li><a href="/category/Maps/United_States/Plains/Kansas" data-id="69">Kansas<span> (13)</span></a></li>
+<li><a href="/category/Maps/United_States/Plains/Missouri" data-id="70">Missouri<span> (33)</span></a></li>
+<li><a href="/category/Maps/United_States/Plains/Nebraska" data-id="71">Nebraska<span> (10)</span></a></li>
+<li><a href="/category/Maps/United_States/Plains/North_Dakota" data-id="72">North Dakota<span> (19)</span></a></li>
+<li><a href="/category/Maps/United_States/Plains/South_Dakota" data-id="73">South Dakota<span> (16)</span></a></li>
+<li><a href="/category/Maps/United_States/Plains/Oklahoma_&amp;_Indian_Territory" data-id="74">Oklahoma & Indian Territory<span> (15)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/United_States/Southwest">Southwest</a><ul><li><a href="/category/Maps/United_States/Southwest/Southwest" data-id="76">Southwest<span> (202)</span></a></li>
+<li><a href="/category/Maps/United_States/Southwest/Arizona" data-id="77">Arizona<span> (55)</span></a></li>
+<li><a href="/category/Maps/United_States/Southwest/Colorado" data-id="78">Colorado<span> (28)</span></a></li>
+<li><a href="/category/Maps/United_States/Southwest/Utah" data-id="79">Utah<span> (13)</span></a></li>
+<li><a href="/category/Maps/United_States/Southwest/Nevada" data-id="80">Nevada<span> (39)</span></a></li>
+<li><a href="/category/Maps/United_States/Southwest/New_Mexico" data-id="81">New Mexico<span> (41)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/United_States/Rocky_Mountains">Rocky Mountains</a><ul><li><a href="/category/Maps/United_States/Rocky_Mountains/Rocky_Mountains" data-id="83">Rocky Mountains<span> (174)</span></a></li>
+<li><a href="/category/Maps/United_States/Rocky_Mountains/Colorado" data-id="84">Colorado<span> (53)</span></a></li>
+<li><a href="/category/Maps/United_States/Rocky_Mountains/Idaho" data-id="85">Idaho<span> (25)</span></a></li>
+<li><a href="/category/Maps/United_States/Rocky_Mountains/Montana" data-id="86">Montana<span> (33)</span></a></li>
+<li><a href="/category/Maps/United_States/Rocky_Mountains/Utah" data-id="87">Utah<span> (25)</span></a></li>
+<li><a href="/category/Maps/United_States/Rocky_Mountains/Wyoming" data-id="88">Wyoming<span> (22)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/United_States/California">California</a><ul><li><a href="/category/Maps/United_States/California/California" data-id="232">California<span> (358)</span></a></li>
+<li><a href="/category/Maps/United_States/California/San_Francisco" data-id="233">San Francisco<span> (32)</span></a></li>
+<li><a href="/category/Maps/United_States/California/Los_Angeles" data-id="234">Los Angeles<span> (18)</span></a></li>
+<li><a href="/category/Maps/United_States/California/San_Diego" data-id="235">San Diego<span> (26)</span></a></li>
+<li><a href="/category/Maps/United_States/California/Other_California_Cities" data-id="236">Other California Cities<span> (27)</span></a></li>
+<li><a href="/category/Maps/United_States/California/California_as_an_Island" data-id="237">California as an Island<span> (55)</span></a></li>
+<li><a href="/category/Maps/United_States/California/Yosemite" data-id="244">Yosemite<span> (17)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/United_States/Pacific_Northwest">Pacific Northwest</a><ul><li><a href="/category/Maps/United_States/Pacific_Northwest/Pacific_Northwest" data-id="91">Pacific Northwest<span> (23)</span></a></li>
+<li><a href="/category/Maps/United_States/Pacific_Northwest/Oregon" data-id="92">Oregon<span> (33)</span></a></li>
+<li><a href="/category/Maps/United_States/Pacific_Northwest/Washington" data-id="93">Washington<span> (47)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/United_States/Alaska" data-id="94">Alaska<span> (135)</span></a></li>
+<li><a href="/category/Maps/United_States/Hawaii" data-id="95">Hawaii<span> (39)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/North_America">North America</a><ul><li><a href="/category/Maps/North_America/North_America" data-id="97">North America<span> (140)</span></a></li>
+<li><a href="/category/Maps/North_America/Canada" data-id="98">Canada<span> (344)</span></a></li>
+<li><a href="/category/Maps/North_America/Mexico" data-id="99">Mexico<span> (164)</span></a></li>
+<li><a href="/category/Maps/North_America/Baja_California" data-id="100">Baja California<span> (31)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/Caribbean_&amp;_Central_America">Caribbean & Central America</a><ul><li><a href="/category/Maps/Caribbean_&amp;_Central_America/Caribbean" data-id="102">Caribbean<span> (200)</span></a></li>
+<li><a href="/category/Maps/Caribbean_&amp;_Central_America/Central_America" data-id="111">Central America<span> (98)</span></a></li>
+<li><a href="/category/Maps/Caribbean_&amp;_Central_America/Cuba" data-id="103">Cuba<span> (42)</span></a></li>
+<li><a href="/category/Maps/Caribbean_&amp;_Central_America/Jamaica" data-id="104">Jamaica<span> (34)</span></a></li>
+<li><a href="/category/Maps/Caribbean_&amp;_Central_America/Hispaniola" data-id="105">Hispaniola<span> (33)</span></a></li>
+<li><a href="/category/Maps/Caribbean_&amp;_Central_America/Puerto_Rico" data-id="106">Puerto Rico<span> (9)</span></a></li>
+<li><a href="/category/Maps/Caribbean_&amp;_Central_America/Virgin_Islands" data-id="107">Virgin Islands<span> (7)</span></a></li>
+<li><a href="/category/Maps/Caribbean_&amp;_Central_America/Bahamas" data-id="108">Bahamas<span> (22)</span></a></li>
+<li><a href="/category/Maps/Caribbean_&amp;_Central_America/Bermuda" data-id="109">Bermuda<span> (14)</span></a></li>
+<li><a href="/category/Maps/Caribbean_&amp;_Central_America/Martinique" data-id="255">Martinique<span> (15)</span></a></li>
+<li><a href="/category/Maps/Caribbean_&amp;_Central_America/Other_Islands" data-id="110">Other Islands<span> (63)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/South_America">South America</a><ul><li><a href="/category/Maps/South_America/South_America" data-id="113">South America<span> (286)</span></a></li>
+<li><a href="/category/Maps/South_America/Argentina" data-id="114">Argentina<span> (42)</span></a></li>
+<li><a href="/category/Maps/South_America/Colombia" data-id="115">Colombia<span> (36)</span></a></li>
+<li><a href="/category/Maps/South_America/Chile" data-id="116">Chile<span> (48)</span></a></li>
+<li><a href="/category/Maps/South_America/Brazil" data-id="117">Brazil<span> (79)</span></a></li>
+<li><a href="/category/Maps/South_America/Guianas_&amp;_Suriname" data-id="118">Guianas & Suriname<span> (36)</span></a></li>
+<li><a href="/category/Maps/South_America/Paraguay_&amp;_Bolivia" data-id="119">Paraguay & Bolivia<span> (31)</span></a></li>
+<li><a href="/category/Maps/South_America/Peru_&amp;_Ecuador" data-id="120">Peru & Ecuador<span> (39)</span></a></li>
+<li><a href="/category/Maps/South_America/Uruguay" data-id="121">Uruguay<span> (12)</span></a></li>
+<li><a href="/category/Maps/South_America/Venezuela" data-id="239">Venezuela<span> (16)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/America" data-id="238">America<span> (148)</span></a></li>
+<li><a href="/category/Maps/Europe">Europe</a><ul><li><a href="/category/Maps/Europe/Europe" data-id="123">Europe<span> (99)</span></a></li>
+<li><a href="/category/Maps/Europe/British_Isles">British Isles</a><ul><li><a href="/category/Maps/Europe/British_Isles/British_Isles" data-id="125">British Isles<span> (154)</span></a></li>
+<li><a href="/category/Maps/Europe/British_Isles/England" data-id="126">England<span> (62)</span></a></li>
+<li><a href="/category/Maps/Europe/British_Isles/London" data-id="127">London<span> (25)</span></a></li>
+<li><a href="/category/Maps/Europe/British_Isles/British_Counties" data-id="128">British Counties<span> (72)</span></a></li>
+<li><a href="/category/Maps/Europe/British_Isles/Scotland" data-id="129">Scotland<span> (52)</span></a></li>
+<li><a href="/category/Maps/Europe/British_Isles/Ireland" data-id="130">Ireland<span> (36)</span></a></li>
+<li><a href="/category/Maps/Europe/British_Isles/Wales" data-id="131">Wales<span> (14)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/Europe/Western_Europe">Western Europe</a><ul><li><a href="/category/Maps/Europe/Western_Europe/Netherlands" data-id="133">Netherlands<span> (179)</span></a></li>
+<li><a href="/category/Maps/Europe/Western_Europe/Amsterdam" data-id="259">Amsterdam<span> (6)</span></a></li>
+<li><a href="/category/Maps/Europe/Western_Europe/Belgium" data-id="134">Belgium<span> (19)</span></a></li>
+<li><a href="/category/Maps/Europe/Western_Europe/Luxembourg" data-id="135">Luxembourg<span> (27)</span></a></li>
+<li><a href="/category/Maps/Europe/Western_Europe/Switzerland" data-id="136">Switzerland<span> (93)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/Europe/France">France</a><ul><li><a href="/category/Maps/Europe/France/France" data-id="138">France<span> (258)</span></a></li>
+<li><a href="/category/Maps/Europe/France/Paris" data-id="139">Paris<span> (22)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/Europe/Germany" data-id="140">Germany<span> (283)</span></a></li>
+<li><a href="/category/Maps/Europe/Central_&amp;_Eastern_Europe">Central & Eastern Europe</a><ul><li><a href="/category/Maps/Europe/Central_&amp;_Eastern_Europe/Central_&amp;_Eastern_Europe" data-id="142">Central & Eastern Europe<span> (0)</span></a></li>
+<li><a href="/category/Maps/Europe/Central_&amp;_Eastern_Europe/Austria" data-id="143">Austria<span> (73)</span></a></li>
+<li><a href="/category/Maps/Europe/Central_&amp;_Eastern_Europe/Poland" data-id="144">Poland<span> (165)</span></a></li>
+<li><a href="/category/Maps/Europe/Central_&amp;_Eastern_Europe/Russia" data-id="145">Russia<span> (203)</span></a></li>
+<li><a href="/category/Maps/Europe/Central_&amp;_Eastern_Europe/Ukraine" data-id="146">Ukraine<span> (102)</span></a></li>
+<li><a href="/category/Maps/Europe/Central_&amp;_Eastern_Europe/Hungary" data-id="147">Hungary<span> (79)</span></a></li>
+<li><a href="/category/Maps/Europe/Central_&amp;_Eastern_Europe/Romania" data-id="148">Romania<span> (54)</span></a></li>
+<li><a href="/category/Maps/Europe/Central_&amp;_Eastern_Europe/Czech_Republic_&amp;_Slovakia" data-id="149">Czech Republic & Slovakia<span> (80)</span></a></li>
+<li><a href="/category/Maps/Europe/Central_&amp;_Eastern_Europe/Baltic_Countries" data-id="150">Baltic Countries<span> (137)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/Europe/Balkans">Balkans</a><ul><li><a href="/category/Maps/Europe/Balkans/Balkans" data-id="152">Balkans<span> (121)</span></a></li>
+<li><a href="/category/Maps/Europe/Balkans/Croatia" data-id="153">Croatia<span> (34)</span></a></li>
+<li><a href="/category/Maps/Europe/Balkans/Bosnia_&amp;_Herzegovina" data-id="154">Bosnia & Herzegovina<span> (17)</span></a></li>
+<li><a href="/category/Maps/Europe/Balkans/Serbia" data-id="155">Serbia<span> (18)</span></a></li>
+<li><a href="/category/Maps/Europe/Balkans/Albania,_Kosovo,_Macedonia" data-id="156">Albania, Kosovo, Macedonia<span> (10)</span></a></li>
+<li><a href="/category/Maps/Europe/Balkans/Bulgaria" data-id="157">Bulgaria<span> (8)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/Europe/Italy">Italy</a><ul><li><a href="/category/Maps/Europe/Italy/Italy" data-id="159">Italy<span> (278)</span></a></li>
+<li><a href="/category/Maps/Europe/Italy/Northern_Italy" data-id="160">Northern Italy<span> (153)</span></a></li>
+<li><a href="/category/Maps/Europe/Italy/Southern_Italy" data-id="161">Southern Italy<span> (53)</span></a></li>
+<li><a href="/category/Maps/Europe/Italy/Rome" data-id="162">Rome<span> (16)</span></a></li>
+<li><a href="/category/Maps/Europe/Italy/Venice" data-id="163">Venice<span> (16)</span></a></li>
+<li><a href="/category/Maps/Europe/Italy/Other_Italian_Cities" data-id="164">Other Italian Cities<span> (79)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/Europe/Southern_Europe">Southern Europe</a><ul><li><a href="/category/Maps/Europe/Southern_Europe/Spain" data-id="166">Spain<span> (194)</span></a></li>
+<li><a href="/category/Maps/Europe/Southern_Europe/Portugal" data-id="167">Portugal<span> (93)</span></a></li>
+<li><a href="/category/Maps/Europe/Southern_Europe/Greece" data-id="168">Greece<span> (161)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/Europe/Turkey" data-id="169">Turkey<span> (142)</span></a></li>
+<li><a href="/category/Maps/Europe/Mediterranean" data-id="170">Mediterranean<span> (74)</span></a></li>
+<li><a href="/category/Maps/Europe/Scandinavia">Scandinavia</a><ul><li><a href="/category/Maps/Europe/Scandinavia/Scandinavia" data-id="172">Scandinavia<span> (118)</span></a></li>
+<li><a href="/category/Maps/Europe/Scandinavia/Iceland" data-id="173">Iceland<span> (16)</span></a></li>
+<li><a href="/category/Maps/Europe/Scandinavia/Sweden" data-id="174">Sweden<span> (28)</span></a></li>
+<li><a href="/category/Maps/Europe/Scandinavia/Norway" data-id="175">Norway<span> (12)</span></a></li>
+<li><a href="/category/Maps/Europe/Scandinavia/Denmark" data-id="176">Denmark<span> (84)</span></a></li>
+<li><a href="/category/Maps/Europe/Scandinavia/Finland" data-id="177">Finland<span> (13)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/Europe/European_Islands">European Islands</a><ul><li><a href="/category/Maps/Europe/European_Islands/Balearic_Islands" data-id="179">Balearic Islands<span> (26)</span></a></li>
+<li><a href="/category/Maps/Europe/European_Islands/Corsica" data-id="180">Corsica<span> (17)</span></a></li>
+<li><a href="/category/Maps/Europe/European_Islands/Cyprus" data-id="181">Cyprus<span> (26)</span></a></li>
+<li><a href="/category/Maps/Europe/European_Islands/Malta" data-id="182">Malta<span> (20)</span></a></li>
+<li><a href="/category/Maps/Europe/European_Islands/Sardinia" data-id="183">Sardinia<span> (27)</span></a></li>
+<li><a href="/category/Maps/Europe/European_Islands/Sicily" data-id="184">Sicily<span> (40)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="/category/Maps/Asia">Asia</a><ul><li><a href="/category/Maps/Asia/Asia" data-id="186">Asia<span> (76)</span></a></li>
+<li><a href="/category/Maps/Asia/Russia_in_Asia" data-id="231">Russia in Asia<span> (137)</span></a></li>
+<li><a href="/category/Maps/Asia/East_Asia">East Asia</a><ul><li><a href="/category/Maps/Asia/East_Asia/China" data-id="188">China<span> (240)</span></a></li>
+<li><a href="/category/Maps/Asia/East_Asia/Hong_Kong" data-id="246">Hong Kong<span> (24)</span></a></li>
+<li><a href="/category/Maps/Asia/East_Asia/Japan" data-id="189">Japan<span> (112)</span></a></li>
+<li><a href="/category/Maps/Asia/East_Asia/Korea" data-id="190">Korea<span> (99)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/Asia/India_&amp;_Sri_Lanka" data-id="191">India & Sri Lanka<span> (290)</span></a></li>
+<li><a href="/category/Maps/Asia/Southeast_Asia">Southeast Asia</a><ul><li><a href="/category/Maps/Asia/Southeast_Asia/Southeast_Asia" data-id="193">Southeast Asia<span> (231)</span></a></li>
+<li><a href="/category/Maps/Asia/Southeast_Asia/Philippines" data-id="194">Philippines<span> (129)</span></a></li>
+<li><a href="/category/Maps/Asia/Southeast_Asia/Singapore" data-id="195">Singapore<span> (23)</span></a></li>
+<li><a href="/category/Maps/Asia/Southeast_Asia/Indonesia" data-id="196">Indonesia<span> (94)</span></a></li>
+<li><a href="/category/Maps/Asia/Southeast_Asia/Malaysia" data-id="197">Malaysia<span> (45)</span></a></li>
+<li><a href="/category/Maps/Asia/Southeast_Asia/Thailand" data-id="198">Thailand<span> (16)</span></a></li>
+<li><a href="/category/Maps/Asia/Southeast_Asia/Other_Islands" data-id="199">Other Islands<span> (96)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/Asia/Central_Asia_&amp;_Caucasus" data-id="200">Central Asia & Caucasus<span> (162)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/Middle_East_&amp;_Holy_Land">Middle East & Holy Land</a><ul><li><a href="/category/Maps/Middle_East_&amp;_Holy_Land/Middle_East" data-id="202">Middle East<span> (167)</span></a></li>
+<li><a href="/category/Maps/Middle_East_&amp;_Holy_Land/Holy_Land" data-id="203">Holy Land<span> (143)</span></a></li>
+<li><a href="/category/Maps/Middle_East_&amp;_Holy_Land/Jerusalem" data-id="243">Jerusalem<span> (9)</span></a></li>
+<li><a href="/category/Maps/Middle_East_&amp;_Holy_Land/Arabian_Peninsula" data-id="204">Arabian Peninsula<span> (46)</span></a></li>
+<li><a href="/category/Maps/Middle_East_&amp;_Holy_Land/Persia" data-id="205">Persia<span> (30)</span></a></li>
+<li><a href="/category/Maps/Middle_East_&amp;_Holy_Land/Turkey_&amp;_Asia_Minor" data-id="206">Turkey & Asia Minor<span> (156)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/Africa">Africa</a><ul><li><a href="/category/Maps/Africa/Africa" data-id="208">Africa<span> (108)</span></a></li>
+<li><a href="/category/Maps/Africa/Egypt" data-id="209">Egypt<span> (66)</span></a></li>
+<li><a href="/category/Maps/Africa/North_Africa" data-id="210">North Africa<span> (123)</span></a></li>
+<li><a href="/category/Maps/Africa/South_Africa" data-id="211">South Africa<span> (67)</span></a></li>
+<li><a href="/category/Maps/Africa/East_Africa" data-id="212">East Africa<span> (49)</span></a></li>
+<li><a href="/category/Maps/Africa/West_Africa" data-id="213">West Africa<span> (76)</span></a></li>
+<li><a href="/category/Maps/Africa/African_Islands,_including_Madagascar" data-id="214">African Islands, including Madagascar<span> (52)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/Australia_&amp;_Oceania">Australia & Oceania</a><ul><li><a href="/category/Maps/Australia_&amp;_Oceania/Pacific" data-id="216">Pacific<span> (66)</span></a></li>
+<li><a href="/category/Maps/Australia_&amp;_Oceania/Australia" data-id="217">Australia<span> (141)</span></a></li>
+<li><a href="/category/Maps/Australia_&amp;_Oceania/Oceania" data-id="218">Oceania<span> (55)</span></a></li>
+<li><a href="/category/Maps/Australia_&amp;_Oceania/New_Zealand" data-id="219">New Zealand<span> (52)</span></a></li>
+<li><a href="/category/Maps/Australia_&amp;_Oceania/Hawaii" data-id="220">Hawaii<span> (40)</span></a></li>
+<li><a href="/category/Maps/Australia_&amp;_Oceania/Other_Pacific_Islands" data-id="221">Other Pacific Islands<span> (34)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/Polar_Maps" data-id="17">Polar Maps<span> (156)</span></a></li>
+<li><a href="/category/Maps/Curiosities">Curiosities</a><ul><li><a href="/category/Maps/Curiosities/Pictorial_Maps" data-id="223">Pictorial Maps<span> (243)</span></a></li>
+<li><a href="/category/Maps/Curiosities/Comic_&amp;_Anthropomorphic" data-id="224">Comic & Anthropomorphic<span> (16)</span></a></li>
+<li><a href="/category/Maps/Curiosities/Title_Pages" data-id="225">Title Pages<span> (41)</span></a></li>
+<li><a href="/category/Maps/Curiosities/Portraits_&amp;_People" data-id="226">Portraits & People<span> (44)</span></a></li>
+</ul>
+</li>
+<li><a href="/category/Maps/World_War_II" data-id="251">World War II<span> (22)</span></a></li>
+<li><a href="/category/Maps/Celestial_Maps" data-id="227">Celestial Maps<span> (99)</span></a></li>
+<li><a href="/category/Maps/Globes" data-id="240">Globes<span> (0)</span></a></li>
+<li><a href="/category/Maps/Atlases" data-id="241">Atlases<span> (27)</span></a></li>
+<li><a href="/category/Maps/Rare_Books" data-id="242">Rare Books<span> (19)</span></a></li>
+</ul></li>
+</ul>
+</div></nav></div>        <div id="mini-boxes">
+            <div class="mini-box" id="account-mini-box">
+                                <h1>Sign In</h1>
+                <form id="global-login-form" action="https://www.raremaps.com/account/login" method="post">
+
+
+                    <input type="hidden" name="_csrf"
+                           value="462x8R2PWvXrxcFm52Nr_32Yavt-vsmf3oCX_XPlEy-uwtzGdNkLl6P2ohzXNQLMOuwBogfmoM640seZHY12bQ=="/>
+                    <input id="referrer" type="hidden" name="LoginForm[returnTo]" value="/gallery/detail/54058/angliae-scotiae-et-hiberniae-sive-britannicae-insularum-de-ortelius" />
+                    <div>
+                        <label for="field-login-email">Email</label>
+                        <input type="text" name="LoginForm[email]" id="field-login-email" placeholder="Email" value="" />
+                    </div>
+                    <div>
+                        <label for="field-login-password">Password</label>
+                        <input type="password" name="LoginForm[password]" id="field-login-password" placeholder="Password" title="Password" value="" />
+                    </div>
+                    <div>
+                        <input class="btn btn-dark" type="submit" name="submit" title="Login" value="Login" />
+                    </div>
+                </form>
+                <div>
+                    <a href="/account/forgot-password">Forgot Password</a>
+                    <a href="/account/signup" class="pull-right">Create Account</a>
+                </div>
+                            </div>
+            <div class="mini-box" id="cart-mini-box">
+                                <div class="button">
+                    <a class="btn btn-light" href="https://www.raremaps.com/checkout">Checkout</a>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+                        
+<div class="detail">
+
+    <div class="nav-container">
+        
+    <div class="breadcrumb">
+        <ul>
+                                                <li><a href="/antique-maps">Antique Maps</a></li>
+                                                                <li>Europe</li>
+                                                                <li>British Isles</li>
+                                                                <li><a href="/category/Maps/Europe/British Isles/British Isles"></a></li>
+                                                                <li>Angliae, Scotiae, Et Hiberniae Sive Britannicae...</li>
+                                    </ul>
+    </div>
+    </div>
+
+    
+    <div class="image card">
+                    <noscript>
+                <img src="https://storage.googleapis.com/raremaps/img/large/54058.jpg" alt="Angliae, Scotiae, Et Hiberniae Sive Britannicae Insularum Descriptio By Abraham Ortelius" />
+            </noscript>
+        <div id="openseadragon1"></div>
+                        <div class="caption">
+            <div class="stock-num">
+                Stock# 54058            </div>
+                            <div class="image-download-link">
+                    <a target="_blank" href="https://storage.googleapis.com/raremaps/img/xlarge/54058.jpg">Download Image</a>
+                </div>
+                    </div>
+    </div>
+    <div class="sidebar">
+        <div class="info card">
+            <div class="creator">
+                <div class="label">Map Maker</div>
+                <div class="value">
+                    <a href="/mapmaker/3/Abraham_Ortelius">Abraham  Ortelius</a>                </div>
+            </div>
+            <div class="title">
+                <div class="label">Title</div>
+                <div class="value">
+                    Angliae, Scotiae, Et Hiberniae Sive Britannicae Insularum Descriptio                </div>
+            </div>
+
+            <div class="group">
+                <div class="issue-place">
+                    <div class="label">Publication Place / Date</div>
+                    <div class="value">
+                        Antwerp / 1574                    </div>
+                </div>
+                <div class="image-size">
+                    <div class="label">Image Dimensions</div>
+                    <div class="value">19 x 14 inches</div>
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="color">
+                    <div class="label">Color</div>
+                    <div class="value">Hand Colored</div>
+                </div>
+                <div class="condition">
+                    <div class="label">Condition</div>
+                    <div class="value">VG+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info2">
+            <div class="stock-num">
+                Stock# 54058            </div>
+            <div class="price">
+                $875.00            </div>
+        </div>
+
+                    <a class="button-cart btn" href="/basket/add/54058">Add to Cart</a>
+        
+        <div class="buttons">
+            <div class="button sell">
+                <a href="/site/sellers?id=54058">Sell Us a Map</a>
+            </div>
+            <div class="button wishlist">
+                <a href="/wishlist/add/54058">Add to Wishlist</a>
+            </div>
+            <div class="button print">
+                <a href="/gallery/print/54058">Print</a>
+            </div>
+            <div class="button share dropmenu">
+                <a href="#">Share</a>
+                <div class="drop">
+                    <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">Facebook</a>
+                    <a href="https://twitter.com/intent/tweet?text=Angliae%2C+Scotiae%2C+Et+Hiberniae+Sive+Britannicae+Insularum+Descriptio&url=https%3A%2F%2Fwww.raremaps.com%2Fgallery%2Fdetail%2F54058%2Fangliae-scotiae-et-hiberniae-sive-britannicae-insularum-de-ortelius" target="_blank">Twitter</a>
+                    <a href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.raremaps.com%2Fgallery%2Fdetail%2F54058%2Fangliae-scotiae-et-hiberniae-sive-britannicae-insularum-de-ortelius&media=https%3A%2F%2Fstorage.googleapis.com%2Fraremaps%2Fimg%2Flarge%2F54058.jpg&description=Angliae%2C+Scotiae%2C+Et+Hiberniae+Sive+Britannicae+Insularum+Descriptio" target="_blank">Pinterest</a>
+                </div>
+            </div>
+            <div class="button email">
+                <a href="mailto:?subject=Someone%20would%20like%20you%20to%20see%20a%20map.&body=https%3A%2F%2Fwww.raremaps.com%2Fgallery%2Fdetail%2F54058%2Fangliae-scotiae-et-hiberniae-sive-britannicae-insularum-de-ortelius">Email a Friend</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="details">
+        <div class="description card">
+            <div class="label">Description</div>
+            <div class="field">
+                                <p>Attractive full-color example of Ortelius' first map of the British Isles, from Ortelius' <em>Theatrum Orbis Terrarum</em>, the first modern atlas of the world.</p>
+
+<p>The map is based on Mercator's 1564 map of the British Isles. West is at the top. Includes a number of sailing ships and a coat of arms.</p>
+            </div>
+        </div>
+
+        
+        
+                                                    <div class="references card">
+                    <div class="label">Abraham Ortelius Biography</div>
+                    <div class="field">
+                        <p>Abraham Ortelius is perhaps the best known and most frequently collected of all sixteenth-century mapmakers. Ortelius started his career as a map engraver. In 1547 he entered the Antwerp guild of St Luke as <em>afsetter van Karten</em>. His early career was as a business man, and most of his journeys before 1560 were for commercial purposes. In 1560, while traveling with Gerard Mercator to Trier, Lorraine, and Poitiers, he seems to have been attracted, largely by Mercator’s influence, towards a career as a scientific geographer. From that point forward, he devoted himself to the compilation his <em>Theatrum Orbis Terrarum</em> (Theatre of the World), which would become the first modern atlas.</p>
+
+<p>In 1564 he completed his “<em>mappemonde</em>", an eight-sheet map of the world. The only extant copy of this great map is in the library of the University of Basle. Ortelius also published a map of Egypt in 1565, a plan of Brittenburg Castle on the coast of the Netherlands, and a map of Asia, prior to 1570.</p>
+
+<p>On May 20, 1570, Ortelius’ <em>Theatrum Orbis Terrarum</em> first appeared in an edition of 53 maps. By the time of his death in 1598, a total of 25 editions were published including editions in Latin, Italian, German, French, and Dutch. Later editions would also be issued in Spanish and English by Ortelius’ successors, Vrients and Plantin, the former adding a number of maps to the atlas, the final edition of which was issued in 1612. Most of the maps in Ortelius <em>Theatrum </em>were drawn from the works of a number of other mapmakers from around the world;&nbsp;a list of 87 authors is given by Ortelius himself</p>
+
+<p>In 1573, Ortelius published seventeen supplementary maps under the title of <em>Additamentum Theatri Orbis Terrarum</em>. In 1575 he was appointed geographer to the king of Spain, Philip II, on the recommendation of Arias Montanus, who vouched for his orthodoxy (his family, as early as 1535, had fallen under suspicion of Protestantism). In 1578 he laid the basis of a critical treatment of ancient geography with&nbsp;his <em>Synonymia </em><em>geographica</em> (issued by the Plantin press at Antwerp and republished as <em>Thesaurus </em><em>geographicus</em> in 1596). In 1584 he issued his <em>Nomenclator </em><em>Ptolemaicus</em>, a&nbsp;Parergon (a series of maps illustrating ancient history, sacred and secular.) Late in life, he also aided Welser in his edition of the Peutinger Table in 1598.</p>
+                    </div>
+                </div>
+                                    
+
+                    <div class="related-categories card">
+                <div class="label">Related Categories</div>
+                <div class="field">
+                    <ul>
+                                            <li><a href="/category/Maps/Europe/British Isles/British Isles">Antique Maps / Europe / British Isles / British Isles</a></li>
+                                            <li><a href="/category/Maps/Europe/British Isles/England">Antique Maps / Europe / British Isles / England</a></li>
+                                            <li><a href="/category/Maps/Europe/British Isles/Scotland">Antique Maps / Europe / British Isles / Scotland</a></li>
+                                            <li><a href="/category/Maps/Europe/British Isles/Ireland">Antique Maps / Europe / British Isles / Ireland</a></li>
+                                            <li><a href="/category/Maps/Europe/British Isles/Wales">Antique Maps / Europe / British Isles / Wales</a></li>
+                                        </ul>
+                </div>
+            </div>
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="associations">
+            <div class="logo">
+                <img alt="ABAA Logo" src="/img/logo_abaa_light.svg" />
+            </div>
+            <div class="logo">
+                <img alt="ILAB Logo" src="/img/logo_ilab_light.svg" />
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="label">
+                Contact Info
+            </div>
+            <div class="left">
+                <div>
+                    Barry Lawrence Ruderman<br />
+                    Antique Maps Inc.
+                </div>
+
+                <div>
+                    7407 La Jolla Boulevard<br />
+                    La Jolla, CA 92037<br />
+                    United States<br />
+                </div>
+            </div>
+            <div class="right">
+                <div>
+                    Phone Number: 858-551-8500<br />
+                    Fax Number: 858-551-0887
+                </div>
+
+                <div>
+                    <a class="l-mailto" href="#">blr</a>
+                </div>
+
+                <div>
+                    <a class="l-mailto" href="#">orders</a>
+                </div>
+            </div>
+        </div>
+        <div class="other-info">
+            <div class="label">
+                Join over 30,000 people receiving our map lists.
+            </div>
+            <div class="subscribe-form">
+                <form method="post" action="/account/subscribe">
+                    <input type="hidden" name="_csrf"
+                           value="462x8R2PWvXrxcFm52Nr_32Yavt-vsmf3oCX_XPlEy-uwtzGdNkLl6P2ohzXNQLMOuwBogfmoM640seZHY12bQ=="/>
+                    <label for="subscribe-email-field" class="sr-only">Email Address</label>
+                    <input type="email" id="subscribe-email-field" name="SubscribeForm[email]" placeholder="Email Address"/>
+                    <input class="btn btn-light" type="submit" value="Subscribe">
+                </form>
+            </div>
+            <div class="label">
+                Follow Us
+            </div>
+            <div class="social-links">
+                <span class="facebook">
+                    <a href="https://www.facebook.com/Barry-Lawrence-Ruderman-Antique-Maps-263067233713597/">Facebook</a>
+                </span>
+                <span class="twitter">
+                    <a href="https://twitter.com/BarryRuderman">Twitter</a>
+                </span>
+                <!--
+                <span class="pinterest">
+                    <a href="#">Pinterest</a>
+                </span>
+                <span class="linkedin">
+                    <a href="#">LinkedIn</a>
+                </span>
+                <span class="rss">
+                    <a href="#">RSS</a>
+                </span>
+                -->
+            </div>
+        </div>
+
+        <nav id="footer-nav">
+            <ul class="hlinks">
+                <li><a href="/basket">Shopping Cart</a></li>
+                <li><a href="/account">Account</a></li>
+                <li><a href="/site/sellers">We Buy Maps</a></li>
+                <li><a href="/site/map-resources">Map Resources</a></li>
+                <li><a href="/site/faq">FAQ</a></li>
+                <li><a href="/archive">Archive</a></li>
+            </ul>
+        </nav>
+
+        <nav id="copy-nav">
+            <ul class="hlinks">
+                <li><a href="/site/copyright">&copy; 2017 Barry Lawrence Ruderman, Antique Maps Inc.  All rights reserved.</a></li>
+                <li><a href="/site/sitemap">Site Map</a></li>
+                <li><a href="/site/terms">Terms &amp; Conditions</a></li>
+                <li><a href="/site/privacy-policy">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+<div id="current-breakpoint"></div>
+<script src="/assets/eb8a39c8/openseadragon.min.js"></script>
+<script src="/assets/9c07e1bd/jquery.min.js"></script>
+<script src="/assets/660b0d57/yii.js"></script>
+<script src="/assets/bf989f32/jquery-ui.min.js"></script>
+<script src="/js/modernizr.js"></script>
+<script src="/js/category-combobox.js"></script>
+<script src="/js/site.js"></script>
+<script src="/js/jquery.slinky.js"></script>
+<script>jQuery(function ($) {
+var viewer = OpenSeadragon({"id":"openseadragon1","prefixUrl":"/img/osd/","maxZoomPixelRatio":2,"tileSources":["https://storage.googleapis.com/raremaps/img/dzi/img_54058.dzi"]})
+});</script><script>
+    $(document).on('mousemove mousedown',function() {
+        $.get(baseUrl + '/site/hit?id=' + hitId);
+        $(document).off('mousemove mousedown');
+        $(window).off('touchstart');
+    });
+    $(window).on('touchstart', function() {
+        $.get(baseUrl + '/site/hit?id=' + hitId);
+        $(document).off('mousemove mousedown');
+        $(window).off('touchstart');
+    });
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"cd07ca3183","applicationID":"377935339","transactionName":"ZlVQZ0sFD0QHV0QLWl8fZ0FQSwhZAlFITEVZQA==","queueTime":0,"applicationTime":275,"atts":"ShJTEQMfHEo=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
