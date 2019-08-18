@@ -11,12 +11,13 @@ def create_app():
     b = Bucket()
     m = MapDetails(
         table=table,
-        page_link="https://www.raremaps.com/gallery/detail/54058/angliae-scotiae-et-hiberniae-sive-britannicae-insularum-de-ortelius",
+        # page_link="https://www.raremaps.com/gallery/detail/54058/angliae-scotiae-et-hiberniae-sive-britannicae-insularum-de-ortelius",
+        page_link="https://www.raremaps.com/gallery/detail/51844/cestria-vulgo-chester-angliae-civitas-braun-hogenberg",
         bucket=b,
         run_on_init=False,
+        run_debug=True,
     )
-    m.read_info_card()
-    m.write_details_to_db()
+    # m.write_details_to_db()
 
 
 if __name__ == "__main__":

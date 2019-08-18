@@ -23,6 +23,7 @@ class MapDetails:
         self.publish_date = kwargs["name"] if "name" in kwargs else None
         self.bucket = kwargs["bucket"] if "bucket" in kwargs else None
         self.run_on_init = kwargs["run_on_init"] if "run_on_init" in kwargs else False
+        self.run_debug = kwargs["run_debug"] if "run_debug" in kwargs else False
         if self.html_text:
             self.soup = BeautifulSoup(self.html_text, features="html.parser")
             self.read_html()
@@ -30,6 +31,9 @@ class MapDetails:
         self.table = kwargs["table"] if "table" in kwargs else None
         if self.run_on_init:
             self.full_run()
+        if self.run_debug:
+            # self.write_details_to_db()
+            pass
 
     def __str__(self):
         s = f"Name:{self.name}\nPrice:{self.price}\nCategory:{self.category}\nLink:{self.image_link}\nid:{self.content_id}"
@@ -41,6 +45,7 @@ class MapDetails:
 
         self.read_head_tags(head)
         self.read_head_script()
+        self.read_info_card()
 
     def read_head_tags(self, h):
         for i in h:
@@ -55,16 +60,28 @@ class MapDetails:
 
     def read_head_script(self):
         script = self.soup.head.find_all("script")
+        # print(script)
         for s in script:
             r = re.search(r"(?<=gtag\(\'event\',\'view_item\',).*(?=\))", s.get_text())
+            f = re.search(r"(?<=fbq\(\'track\',\'ViewContent\',).*(?=\))", s.get_text())
 
             if r:
                 try:
                     kv = json.loads(r.group())
                     d = kv["items"][0]
+                    # print(d)
                     self.content_id = d["id"]
                     self.price = d["price"]
-                    self.category = d["category"]
+                except KeyError:
+                    pass
+            if f:
+                try:
+                    kv = json.loads(f.group())
+                    d = kv["content_category"]
+                    self.category = d
+                    # self.content_id = d["id"]
+                    # self.price = d["price"]
+                    # self.category = d["category"]
                 except KeyError:
                     pass
 
@@ -96,8 +113,8 @@ class MapDetails:
 
         pub_string = pub_info[0].text.strip()
 
-        self.pub_loc = pub_string.split('/')[0]
-        self.publish_date = pub_string.split('/')[1]
+        self.pub_loc = pub_string.split("/")[0]
+        self.publish_date = pub_string.split("/")[1]
 
     def check_if_in_bucket(self):
         pass
@@ -115,9 +132,9 @@ class MapDetails:
             "description": self.description,
             "publish_date": self.publish_date,
             "date_downloaded": str(datetime.utcnow()),
-            "publish_location":self.pub_loc
+            "publish_location": self.pub_loc,
+            "category": self.category,
         }
-        print(entry)
         self.entry = entry
         # self.table.put_item(Item=entry)
 
