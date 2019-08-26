@@ -11,5 +11,12 @@ For testing purposes in app.py you can put the link to any map on the website an
 
 ## Steps to run
 
-1. Have Python 3.6 or greater (f strings)
-2.
+1. Have Docker
+2. If you want to run this actually it will require a DynamoDB table and an S3 bucket. Add the credentials to a user with proper permissions and names to a .env file
+
+- SECRET_KEY=\<aws secret key>
+- ACCESS_KEY=\<aws access key>
+- S3_BUCKET=\<bucket name>
+- TABLE_NAME=\<table name>
+
+3. Run docker-compose up --build

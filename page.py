@@ -7,7 +7,7 @@ import shutil
 from config import Config
 from utils.bucket import Bucket
 from datetime import datetime
-from botocore.exceptions import ClientError
+from botocore.exceptions import ClientError, NoCredentialsError
 from boto3.exceptions import S3UploadFailedError
 
 
@@ -64,8 +64,10 @@ class MapDetails:
         script = self.soup.head.find_all("script")
         # print(script)
         for s in script:
-            r = re.search(r"(?<=gtag\(\'event\',\'view_item\',).*(?=\))", s.get_text())
-            f = re.search(r"(?<=fbq\(\'track\',\'ViewContent\',).*(?=\))", s.get_text())
+            r = re.search(
+                r"(?<=gtag\(\'event\',\'view_item\',).*(?=\))", s.get_text())
+            f = re.search(
+                r"(?<=fbq\(\'track\',\'ViewContent\',).*(?=\))", s.get_text())
 
             if r:
                 try:
@@ -93,7 +95,8 @@ class MapDetails:
             if info and len(info) > 0
             else None
         )
-        cart = creator[0].find_all("a") if creator and len(creator) > 0 else None
+        cart = creator[0].find_all(
+            "a") if creator and len(creator) > 0 else None
         self.cartographer = cart[0].text if cart and len(cart) > 0 else None
 
         issue = (
@@ -133,6 +136,8 @@ class MapDetails:
         except ClientError as e:
             print(e)
             print(self.entry)
+        except AttributeError:  # NoCredentialsError as e:
+            print('No credentials but continuing for proof of concept')
 
     def get_page_html(self):
         r = requests.get(self.page_link)
@@ -161,4 +166,3 @@ class MapDetails:
     def full_run(self):
         self.write_details_to_db()
         self.save_image_to_s3()
-
