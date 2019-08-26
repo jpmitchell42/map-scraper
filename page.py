@@ -7,6 +7,8 @@ import shutil
 from config import Config
 from utils.bucket import Bucket
 from datetime import datetime
+from botocore.exceptions import ClientError
+from boto3.exceptions import S3UploadFailedError
 
 
 class MapDetails:
@@ -79,17 +81,12 @@ class MapDetails:
                     kv = json.loads(f.group())
                     d = kv["content_category"]
                     self.category = d
-                    # self.content_id = d["id"]
-                    # self.price = d["price"]
-                    # self.category = d["category"]
+
                 except KeyError:
                     pass
 
     def read_info_card(self):
         info = self.soup.find_all("div", {"class": "info card"})
-        # print(info)
-        # print(type(info))
-        # print(len(info))
 
         creator = (
             info[0].find_all("div", {"class": "creator"})
@@ -116,12 +113,6 @@ class MapDetails:
         self.pub_loc = pub_string.split("/")[0]
         self.publish_date = pub_string.split("/")[1]
 
-    def check_if_in_bucket(self):
-        pass
-
-    def upload_to_bucket(self):
-        pass
-
     def write_details_to_db(self):
         entry = {
             "name": self.name,
@@ -136,7 +127,12 @@ class MapDetails:
             "category": self.category,
         }
         self.entry = entry
-        # self.table.put_item(Item=entry)
+        try:
+
+            self.table.put_item(Item=entry)
+        except ClientError as e:
+            print(e)
+            print(self.entry)
 
     def get_page_html(self):
         r = requests.get(self.page_link)
@@ -151,10 +147,14 @@ class MapDetails:
         s3_name = self.image_link.split("/")[-1]
         filetype = s3_name.split(".")[-1]
 
-        with open(f"img.{filetype}", "wb") as out_file:
+        with open(s3_name, "wb") as out_file:
             shutil.copyfileobj(r.raw, out_file)
-        self.bucket.bucket.upload_file(f"img.{filetype}", f"{s3_name}.jpg")
-        os.remove(f"img.{filetype}")
+        try:
+            self.bucket.bucket.upload_file(s3_name, f"{s3_name}")
+            os.remove(s3_name)
+        except S3UploadFailedError as e:
+            print(e)
+            print(f"Saved file {s3_name} to folder")
 
         del r
 
@@ -162,10 +162,3 @@ class MapDetails:
         self.write_details_to_db()
         self.save_image_to_s3()
 
-
-if __name__ == "__main__":
-    print("maps")
-    m = MapDetails(
-        page_link="https://www.raremaps.com/gallery/detail/47645/scotiae-tabula-ortelius"
-    )
-    print(m)
