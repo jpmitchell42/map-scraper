@@ -1,4 +1,4 @@
-### Map Scraper
+# Map Scraper
 
 I wrote this to build out a really specific Django/React thing I'm working on which relies on
 images of maps being stored as well as their associated information.
@@ -12,11 +12,23 @@ For testing purposes in app.py you can put the link to any map on the website an
 ## Steps to run
 
 1. Have Docker
-2. If you want to run this actually it will require a DynamoDB table and an S3 bucket. Add the credentials to a user with proper permissions and names to a .env file
+2. a. (easiest) If you just want to run without connection run `touch .env`
+3. b. (harder) If you want to run this actually it will require a DynamoDB table and an S3 bucket. Add the credentials to a user with proper permissions and names to a .env file
 
-- SECRET_KEY=\<aws secret key>
-- ACCESS_KEY=\<aws access key>
-- S3_BUCKET=\<bucket name>
-- TABLE_NAME=\<table name>
+```
+SECRET_KEY=<aws secret key>
+ACCESS_KEY=<aws access key>
+S3_BUCKET=<bucket name>
+TABLE_NAME=<table name>
+```
 
-3. Run docker-compose up --build
+4. Run `docker-compose up --build`
+
+5. You can change the line 6 in the docker-compose.yml file. It can take one argument that is a new url:
+
+```
+   command: python3 app.py https://www.raremaps.com/gallery/detail/55035/an-exact-mapp-of-china-being-faithfully-copied-from-one-bro-de-smedo-webb
+
+```
+
+will get that new url. Alternatively you can change it in app.py
